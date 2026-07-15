@@ -23,10 +23,10 @@ Location_Id int,
 constraint fk_Department_Id foreign key(Department_ID) references Departments(Department_ID),
 constraint fk_Location_Id foreign key(Location_ID) references Location(Location_Id));
 
-Alter table Employee add Email varchar(50);
-Alter table Employee modify Column Designation varchar(100);
-Alter table Employee Drop Column Age;
-Alter table Employee Rename Column Hire_Date to Date_Of_Joining;
+Alter table Employees add Email varchar(50);
+Alter table Employees modify Column Designation varchar(100);
+Alter table Employees Drop Column Age;
+Alter table Employees Rename Column Hire_Date to Date_Of_Joining;
 
 Rename table Departments to Departments_Info;
 Rename table Location to Locations;
